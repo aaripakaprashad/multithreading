@@ -2,8 +2,7 @@
 #include <stdio.h>
 #include <pthread.h>
 #include <semaphore.h>
-pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;
-pthread_cond_t cv = PTHREAD_COND_INITIALIZER;
+
 sem_t sem1, sem2;
 
 void * odd_thread(void *arg) { //even
